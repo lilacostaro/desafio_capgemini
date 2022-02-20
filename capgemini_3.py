@@ -75,8 +75,8 @@ def numero_anagramas(palavra):
             # selecionando a substring
             nome2 = lista[i]
             
-            # Para cada repetição do caractere, será adicionado 1 ao seu valor. 
-            # Se o caractere não se repetir, o valor default é 1 
+            # Nessa condição, para cada letra sera checado se o caractere já corresponde a uma chave do dicionario 
+            # caso não seja, sera adicionado com o valor 1, caso seja, o valor sera atualizado para (valor + 1)
             for letra in nome2:
                 try:
                     dict_2[letra] = dict_2[letra] + 1
