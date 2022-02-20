@@ -14,6 +14,8 @@ def numero_anagramas(palavra):
     Parte 1: Retorna todas as substrings da palavra
     """
     # lista vazia que ira receber as substrings da palavra
+    palavra = palavra.lower()
+    
     lista = []
     
     # variavel que recebe o numero de anagramas na palavra
@@ -100,15 +102,23 @@ def numero_anagramas(palavra):
     print(f"\nA palavra é '{palavra}'")
     # Imprime a quantidade de anagramas presente na palavra
     print(f'Ela contém {qtd_anagramas} anagramas.')
-    # Imprime os anagramas contidos na palavra
-    print(f'Eles são:\n{dict_anagramas}\n')
+    # Imprime os anagramas contidos na palavra se existirem
+    if dict_anagramas:
+        print(f'Eles são:\n{dict_anagramas}\n')
+    else:
+        print('\n')
 
 
 # Testes unitarios    
-if __name__=='__main__':     
-    numero_anagramas(palavra = 'ovo')
-    numero_anagramas(palavra = 'ifailuhkqq')
-    numero_anagramas(palavra = 'maça')
-    numero_anagramas(palavra = 'bolo')
-    numero_anagramas(palavra= 'kamizaze')
+if __name__=='__main__': 
+    numero_anagramas(palavra = 'Capgemini')    
+    numero_anagramas(palavra = 'Ovo')
+    numero_anagramas(palavra = 'Ifailuhkqq')
+    numero_anagramas(palavra = 'Python')
+    numero_anagramas(palavra = 'Java')
+    numero_anagramas(palavra = 'JavaScript')
+    numero_anagramas(palavra = 'Maça')
+    numero_anagramas(palavra = 'Bolo')
+    numero_anagramas(palavra = 'Kamizaze')
+   
 
