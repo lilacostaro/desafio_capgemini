@@ -13,9 +13,10 @@ def numero_anagramas(palavra):
     """
     Parte 1: Retorna todas as substrings da palavra
     """
-    # lista vazia que ira receber as substrings da palavra
+    # transforma todas as letras para minusculo, uma vez que 'A != a' por exemplo
     palavra = palavra.lower()
     
+    # lista vazia que ira receber as substrings da palavra
     lista = []
     
     # variavel que recebe o numero de anagramas na palavra
